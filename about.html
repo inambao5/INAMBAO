@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WHO I'AM</title>
+
+<style>
+
+
+body{
+    background-image: url('');
+backgroun-position:center;
+background-size:cover
+    
+}
+
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:color:green;
+    background-size:400% 400%;
+    animation:bgmove 10s infinite alternate;
+    z-index:-1;
+    opacity:0.15;
+}
+
+@keyframes bgmove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+nav{
+    background:rgba(0,0,0,0.8);
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+   
+    font-weight:bold;
+   color:orange
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f7ff;
+}
+
+.container{
+    padding:60px 10%;
+}
+
+.container h1{
+    text-align:center;
+    font-size:50px;
+    color:white;
+    margin-bottom:40px;
+    text-shadow:0 0 15px #00f7ff;
+}
+
+
+.about-box p{
+    line-height:2;
+    font-size:18px;
+}
+
+.skills{
+    margin-top:2px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:40px;
+}
+
+.skill{
+    background:green;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.10s;
+}
+
+.skill:hover{
+    background:black;
+    color:white;
+    transform:scale(1.05);
+}
+
+footer{
+    margin-top:5px;
+    text-align:center;
+    padding:20px;
+    background:ORANGE;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">INAMBAO AKUFUNA</div>
+  <div class="logo">
+<img src="" alt="KMU">
+
+    <div>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="services.html">MY SERVICES</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>ABOUT ME</h1>
+
+    <div class="about-box">
+        <p>
+            I am INAMBAO AKUFUNA, I offer cyber security services from cyber space safety and awareness to solving critical problems.     </p>
+
+        <br>
+
+        <p>
+            My goal is to use technology educate others about cyber safety, defense measures, and threat mitigation
+        </p>
+    </div>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h2>THREAT DETECTION AND INTELLIGENCE ANALYST</h2>
+            <p>helping in detecting cyther threats and offer intelligence that can help mitigate such attacks.</p>
+        </div>
+
+        <div class="skill">
+            <h2>ETHICAL HACKING</h2>
+            <p>TESTING SYSTEM ETHICALLY, FIND WEAKNESSES, AND PROVIDE SOLUTIONS TO SYSTEM WEAKNESSES</p>
+        </div>
+        </div>
+
+    
+</div>
+
+</body>
+</html>
